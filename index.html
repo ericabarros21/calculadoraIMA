@@ -7,6 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
+
+    <div class="container">
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+
+        <main>
+            <label>
+                Converter de:
+                <select>
+                    <option>
+                        R$ Real Brasileiro
+                    </option>
+                </select>
+            </label>
+
+
+            <label>
+                Para:
+                <select id="select">
+                    <option> US$ Dólar Americano</option>
+                    <option> € Euro</option>
+                </select>
+            </label>
+
+        
+            <label>
+                Valor:
+                <input id="input-real" placeholder="R$ 10.000.00">
+            </label>
+
+            <button id="button" type="button">Converter</button>
+
+            <section>
+                <div class="section-container">
+                    <img src="./img/brasil.png" alt="bandeira-brasil">
+                    <p class="name">Real</p>
+                    <p class="name-valor"  id="name-valor-real">R$ 00,00</p>
+                </div>
+
+                <img class="arrow-image" src=".//img/seta.png" alt="seta">
+
+                <div class="section-container">
+                    <img src="./img/EUA.png" id="image-moeda" alt="bandeira-USA">
+                    <p class="name" id="name-moeda">Dólar Americano</p>
+                    <p class="name-valor" id="name-valor-dolar"> $00.00</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+<script src="./conversor.js"></script> 
 </body>
 </html>

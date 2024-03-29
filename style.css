@@ -1,47 +1,136 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: #82735C;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; /* Necessário para o posicionamento absoluto do pseudo-elemento */
+  background-image: url(./img/moedas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #1883e2;
+  height: 80px;
 }
 
 .container {
-  background: #4B3B40;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px;
-  height: 400px;
-  color: #D1F5BE;
+  width: 375px;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
-#calcular {
-  margin-top: 20px;
-  width: 160px;
-}
-
-.result {
-  border: 1px solid red;
-  width: 170px;
-  height: 130px;
-  margin-top: 20px;
-  background-color: white;
-}
-
-.input #calcular .result {
-  align-items: center;
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 18px;
+  color: white;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
-.result {
-  color: black;
+main {
+  padding: 24px;
+}
+
+label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+select {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 16px;
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  height: 48px;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #1883e2;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 48px;
+  color: #f4f4f4;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+section {
+  border: 1px solid #1883e2;
+  border-radius: 4px;
+}
+
+.section-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+.name-valor {
+  color: #1883e2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.arrow-image {
+  margin: 15px auto;
+  display: block;
+}
+
+img {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
